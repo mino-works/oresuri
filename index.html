@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>プライバシーポリシー | 俺スリ</title>
-<meta name="description" content="アプリ「おれはボールを持ったらすぐスリーを打つ男だった」のプライバシーポリシー。情報は集めず、記録は端末の中だけに保存します。">
+<title>プライバシーポリシー | おれスリ</title>
+<meta name="description" content="アプリ「おれスリ: おれはボールを持ったらすぐスリーを打つ男だった」のプライバシーポリシー。広告（Google AdMob）とトラッキングの確認、端末の中に保存する記録について。">
 <style>
 :root{--bg:#F6F1E6;--card:#FFFFFF;--ink:#1B1A17;--ink-sub:#5A5248;--line:#DCD2C0;--accent:#B4500A;--soft:#EFE6D4;--gold:#F2B21E;color-scheme:light dark}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1E1A16;--card:#2A2420;--ink:#F3EDE1;--ink-sub:#BDB2A2;--line:#4A4036;--accent:#F2B544;--soft:#332C26}}
@@ -35,55 +35,93 @@ summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:
 details p{margin:8px 0}
 .en{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 18px 12px;margin-top:40px}
 .en h2{border-top:0;margin-top:12px}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:8px 0}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.tbl{overflow-x:auto}
 footer{border-top:1px solid var(--line);padding:20px 0 32px;color:var(--ink-sub);font-size:14px}
 </style>
 </head>
 <body>
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="./">俺スリ</a>
+    <a class="brand" href="./">おれスリ</a>
     <nav aria-label="サイト内"><a href="support.html">サポート</a></nav>
   </div>
 </header>
 
 <main>
   <div class="wrap">
-    <p class="app">おれはボールを持ったらすぐスリーを打つ男だった</p>
+    <p class="app">おれスリ: おれはボールを持ったらすぐスリーを打つ男だった</p>
     <h1>プライバシーポリシー</h1>
-    <p class="date">制定日：2026年10月12日　／　<a href="#en">English</a></p>
+    <p class="date">制定日：2026年10月12日　／　改訂日：2026年10月14日（広告を入れる版 1.0.10 に合わせて改訂）　／　<a href="#en">English</a></p>
 
-    <p>mino works（以下「開発者」）は、スマートフォン用アプリ「おれはボールを持ったらすぐスリーを打つ男だった」（略称「俺スリ」、以下「本アプリ」）における利用者の情報の取り扱いについて、次のとおり定めます。</p>
+    <p>mino works（以下「開発者」）は、スマートフォン用アプリ「おれスリ: おれはボールを持ったらすぐスリーを打つ男だった」（以下「本アプリ」）における利用者の情報の取り扱いについて、次のとおり定めます。</p>
 
     <h2>1. 開発者が集める情報</h2>
-    <p>開発者は、本アプリを通じて、利用者の情報を一切収集しません。氏名、メールアドレス、電話番号などの個人情報も、端末の識別子も受け取りません。</p>
+    <p>開発者は、本アプリを通じて、利用者の情報を直接集めることはありません。</p>
     <ul>
       <li>アカウント登録やログインの機能はなく、開発者のサーバーもありません。</li>
-      <li>本アプリはインターネットに接続しません。遊ぶための部品はすべてアプリの中に入っています。</li>
-      <li>広告、アクセス解析、クラッシュ収集など、情報を外部に送るツールは組み込んでいません。</li>
-      <li>利用者を追跡（トラッキング）することはありません。</li>
+      <li>本アプリ自身は、遊びの記録などを外部へ送信しません。</li>
+      <li>開発者独自のアクセス解析やクラッシュ収集のツールは組み込んでいません。</li>
+    </ul>
+    <p>ただし、バージョン 1.0.10 から、広告を表示するために Google の広告サービスを組み込んでいます。広告のために送られる情報は、次の2章のとおりです。</p>
+
+    <h2>2. 広告（Google AdMob）</h2>
+    <p>本アプリは、無料で遊べるように、Google LLC が提供する広告配信サービス「Google AdMob」を使って広告を表示します。</p>
+    <ul>
+      <li>広告は<strong>試合が終わった後の画面</strong>でだけ表示します。試合の途中には表示しません。</li>
+      <li>表示する広告：準決勝か決勝で負けた時に、利用者が選んだ場合だけ見る広告（見終わると同じ回戦からやり直せます。1つの大会で1回まで）と、試合の後に次の試合へ進む時にときどき表示する全画面の広告です。バナー広告はありません。</li>
+      <li>広告の内容は、Google の区分で全年齢向け（G）に制限しています。</li>
+    </ul>
+    <p>広告を表示するために、Google の広告の部品（Google Mobile Ads SDK）が、次の情報を自動的に取得し、Google に送信します。開発者がこれらの情報を受け取って保管することはありません。</p>
+    <div class="tbl"><table>
+      <tr><th>情報</th><th>使い道</th></tr>
+      <tr><td>端末の識別子（広告識別子 IDFA ※利用者が許可した場合のみ、ベンダー識別子 IDFV など）</td><td>広告の配信、効果の測定、利用者に合った広告の表示、不正の防止</td></tr>
+      <tr><td>広告の表示・タップなどの記録、本アプリでの操作の一部</td><td>同上</td></tr>
+      <tr><td>IP アドレスから推定するおおよその場所</td><td>同上（正確な位置情報は取得しません）</td></tr>
+      <tr><td>端末の種類・OS のバージョン、クラッシュや動作の情報</td><td>広告の配信と、広告の部品の不具合の分析</td></tr>
+    </table></div>
+    <p>Google による情報の取り扱いは、Google の方針に従います。</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">Google プライバシーポリシー</a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a></li>
     </ul>
 
-    <h2>2. 端末の中に保存する情報</h2>
+    <h2>3. トラッキングの確認（App Tracking Transparency）</h2>
+    <p>本アプリは、インストール後はじめて開いた時に、広告について説明する画面を出し、続けて iPhone の確認（「App にトラッキングしないように要求」または「許可」）を表示します。</p>
+    <ul>
+      <li>「許可」を選んだ場合だけ、広告識別子（IDFA）が広告のために使われ、利用者に合った広告が表示されやすくなります。</li>
+      <li>「App にトラッキングしないように要求」を選んでも、遊べる内容は同じです。その場合も広告は表示されますが、広告識別子は使われません。</li>
+      <li>選んだ後でも、iPhone の「設定」→「プライバシーとセキュリティ」→「トラッキング」で、いつでも変えられます。</li>
+      <li>欧州など、法律で同意が必要な地域では、Google の同意の画面が表示されることがあります。</li>
+    </ul>
+
+    <h2>4. 端末の中に保存する情報</h2>
     <p>本アプリは、遊ぶために必要な次の情報を、<strong>利用者の端末の中だけ</strong>に保存します。これらの情報が、開発者や第三者に送られることはありません。</p>
     <ul>
-      <li>遊びの記録（試合の数、連続で決めた本数の自己ベスト、大会の進み具合と最高記録、優勝した回数）</li>
+      <li>遊びの記録（試合の数、連続で決めた本数の自己ベスト、大会の進み具合と最高記録、優勝した回数、全国大会の連覇の記録、前に負けた回戦）</li>
       <li>はじめての試合のお手本やヒントを見終えたか、攻める側を変えたことがあるか（同じ案内をくり返し出さないため）</li>
+      <li>広告の表示の間隔を守るための記録（前に全画面の広告を出した時刻、その大会でやり直しの広告を使ったか）</li>
     </ul>
-    <p>これらの情報は、端末の OS の機能（iCloud バックアップなど）によって、利用者自身のバックアップに含まれることがあります。バックアップの扱いは、OS の提供元の方針に従います。</p>
+    <p>これらの情報は、端末の OS の機能（iCloud バックアップなど）によって、利用者自身のバックアップに含まれることがあります。</p>
 
-    <h2>3. 情報の削除</h2>
-    <p>本アプリを端末から削除すると、本アプリが端末に保存した情報はすべて削除されます。削除した記録は元に戻せません。</p>
+    <h2>5. 情報の削除</h2>
+    <p>本アプリを端末から削除すると、本アプリが端末に保存した情報はすべて削除されます。削除した記録は元に戻せません。Google が取得した情報の扱いは、上の Google の方針をご覧ください。</p>
 
-    <h2>4. 端末の機能</h2>
-    <p>本アプリは、試合の演出のために端末の振動（触覚フィードバック）を使います。端末のカメラ、マイク、写真、連絡先、位置情報にはアクセスしません。通知（プッシュ通知・端末内の予約通知）も使いません。</p>
+    <h2>6. 端末の機能</h2>
+    <p>本アプリは、試合の演出のために端末の振動（触覚フィードバック）を使います。端末のカメラ、マイク、写真、連絡先、位置情報（GPS）にはアクセスしません。通知（プッシュ通知・端末内の予約通知）も使いません。ゲームはインターネットに接続しなくても遊べます（その間、広告は表示されません）。</p>
 
-    <h2>5. 第三者への提供・外部送信</h2>
-    <p>開発者は、利用者の情報を第三者に提供しません。本アプリが、利用者の情報を外部に送信することはありません。</p>
+    <h2>7. 第三者への提供</h2>
+    <p>開発者は、利用者の情報を第三者に提供しません。広告のために Google に送られる情報は、2章のとおりです。</p>
 
-    <h2>6. このポリシーの変更</h2>
-    <p>開発者は、必要に応じてこのポリシーを変更します。広告など、情報の扱いが変わる機能を加える場合は、その機能を含む更新を配信する前に、このページで変更の内容と改訂日をお知らせします。</p>
+    <h2>8. 子どもの利用</h2>
+    <p>本アプリは全年齢向けです。広告の内容は全年齢向け（G）に制限しています。保護者の方は、必要に応じて3章の設定をご利用ください。</p>
 
-    <h2 id="contact">7. お問い合わせ</h2>
+    <h2>9. このポリシーの変更</h2>
+    <p>開発者は、必要に応じてこのポリシーを変更します。情報の扱いが変わる機能を加える場合は、その機能を含む更新を配信する前に、このページで変更の内容と改訂日をお知らせします。</p>
+
+    <h2 id="contact">10. お問い合わせ</h2>
     <ul>
       <li>開発者：mino works</li>
       <li>メール：<a href="mailto:minoapp.vegas.rel@gmail.com">minoapp.vegas.rel@gmail.com</a></li>
@@ -92,14 +130,16 @@ footer{border-top:1px solid var(--line);padding:20px 0 32px;color:var(--ink-sub)
 
     <section class="en" id="en" lang="en">
       <h2>Privacy Policy (English)</h2>
-      <p>This policy is for "OreSuri" (Japanese title: Ore wa Booru wo Mottara Sugu Surii wo Utsu Otoko Datta) by mino works. The Japanese text above is the official version.</p>
+      <p>This policy is for "OreSuri: Catch &amp; Shoot Threes" (Japanese title: Ore Suri: Ore wa Booru wo Mottara Sugu Surii wo Utsu Otoko Datta) by mino works. Established October 12, 2026. Revised October 14, 2026 for version 1.0.10, which adds ads. The Japanese text above is the official version.</p>
       <ul>
-        <li>We do not collect any information about you. There is no account, no login and no server of ours.</li>
-        <li>The app does not connect to the internet. Everything it needs is bundled inside the app.</li>
-        <li>The app contains no ads, analytics, crash reporting or other tools that send data out, and it does not track you.</li>
-        <li>Your game data (number of games, best streak, tournament progress and best result, number of titles, whether you have finished the first-game tutorial and hints or switched sides) is stored only on your device. Deleting the app deletes it.</li>
-        <li>The app uses vibration (haptic feedback). It does not use the camera, microphone, photos, contacts, location or notifications.</li>
-        <li>If we add a feature that changes how information is handled, such as ads, we will update this page before releasing that update.</li>
+        <li>We do not collect information about you ourselves. There is no account, no login and no server of ours. The app itself does not send your game data anywhere.</li>
+        <li><strong>Ads (Google AdMob).</strong> From version 1.0.10, the app shows ads provided by Google LLC so it can stay free. Ads appear only on the screen after a match, never during play: an optional ad you choose to watch after losing a semifinal or final (to replay that round, once per tournament), and an occasional full screen ad when you move on to the next match. There are no banner ads. Ad content is limited to the G rating.</li>
+        <li>To show ads, the Google Mobile Ads SDK automatically collects and sends to Google: device identifiers (the advertising identifier IDFA only if you allow tracking, the identifier for vendors IDFV and similar), ad views and taps and some in-app interactions, approximate location estimated from your IP address, device type and OS version, and crash and performance data. These are used for ad delivery, measurement, personalized ads and fraud prevention. We do not receive or store this information. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</li>
+        <li><strong>Tracking permission (App Tracking Transparency).</strong> On the first launch after install, the app shows a short explanation and then the iOS tracking prompt. The IDFA is used only if you choose Allow. If you choose Ask App Not to Track, the game is exactly the same and ads are still shown without the IDFA. You can change this any time in Settings, Privacy and Security, Tracking. In regions where consent is required by law, a Google consent form may appear.</li>
+        <li>Your game data (number of games, best streak, tournament progress and best result, titles, National titles in a row, the round you lost, tutorial and hint flags, and the timing of the last ads) is stored only on your device. Deleting the app deletes it.</li>
+        <li>The app uses vibration (haptic feedback). It does not use the camera, microphone, photos, contacts, GPS location or notifications. The game works offline. Ads are not shown while offline.</li>
+        <li>We do not share your information with third parties, except the information sent to Google for ads as described above.</li>
+        <li>If we change how information is handled, we will update this page before releasing that update.</li>
         <li>Contact: <a href="mailto:minoapp.vegas.rel@gmail.com">minoapp.vegas.rel@gmail.com</a></li>
       </ul>
     </section>
